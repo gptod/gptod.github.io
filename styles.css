@@ -1,0 +1,310 @@
+/* define colors */
+/* legend: */
+/* --colpag1: page color 1 (base color)*/
+/* --colpag2: page color 2 (hoover sidenav)*/
+/* --colstr1: structure color 1 (sidenav & footer bg)*/
+/* --colstr2: structure color 2 (headings' border)*/
+/* --colstr3: structure color 3 (edges)*/
+/* --coltxt1: text color 1 (text)*/
+/* --coltxt2: text color 2 (headings)*/
+/* --coltxt3: text color 3 (nav menu)*/
+/* first option */
+:root {
+  --colback: rgb(255, 255, 204);
+  --colpag1: rgb(255, 255, 204);
+  --colstr1: rgb(71,88,65);
+  --colstr2: rgb(255, 255, 204);
+  --colstr3: rgb(240,135,0);
+  --coltxt1: black;
+  --coltxt2: rgb(71,88,65);
+  --coltxt3: rgb(255, 255, 204);
+  --collink1: rgb(20,70,160);
+  --collink2: rgb(240,135,0);
+}
+
+/* {FFFFCC,475841,3F403F} */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /*font-family: Arial, Helvetica, sans-serif;*/
+  /*font-family: Geneva;*/
+  font-family: tahoma;
+  background-color: var(--colback);
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  /*margin-right: 80px;
+  margin-left: 80px;*/
+  /*margin-right: 8%;
+  margin-left: 8%;*/
+  /*border: 2px solid var(--colstr3);*/
+}
+
+/* style image header */
+.header_img {
+  width:100%;
+  height:200px;
+  object-fit: cover;
+  margin-bottom: -4px;
+}
+
+/* change size on hover */
+.header_img:hover {
+  height:400px;
+}
+
+/* style the main section */
+.section {
+  height:100%;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  font-family: Helvetica;
+}
+
+#section_home {
+  flex-direction: row;
+}
+
+.column1 {
+  /*font-family: tahoma;*/
+  font-family: Helvetica;
+  background-color: var(--colstr2);
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  align-items: stretch;
+  align-content: center;
+  /*justify-content: center;*/
+}
+
+.column2 {
+  /*font-family: tahoma;*/
+  font-family: Helvetica;
+  background-color: var(--colstr2);
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  /*align-content: center;
+  justify-content: center;*/
+}
+
+/* style the footer */
+.footer {
+  background-color: var(--colstr1);
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+#footer_home {display: none;}
+
+/* style the top navigation menu */
+.topnav {
+  display: block;
+  background-color: var(--colstr2);
+  /*width: 100%;*/
+  flex-direction: row;
+  padding-top: 0px;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  /*border-right: none;*/
+  /*border-bottom: 2px solid var(--colstr3);*/
+}
+
+/* style the top navigation links */
+.topnav a {
+  /*display: none;*/
+  color: var(--colstr3);
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* change color on hover */
+.topnav a:hover {
+  color: var(--colstr1);
+}
+
+/* style the main page */
+.page {
+  margin-top: 10px;
+  margin-bottom: 50px;
+  margin-left: 200px;
+  margin-right: 200px;
+  background-color: var(--colpag1);
+}
+
+#page_home {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 0px;
+  margin-right: 50px;
+}
+
+
+/* style the main page body */
+.page_body {
+  padding-top: 0px;
+  text-align: justify;
+  /*max-width: 800px;*/
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* style the portraits */
+.portrait {
+  background-color: var(--colstr1);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction:column;
+  /* justify-content: center;
+  align-content: center; */
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  border-radius: 30px;
+}
+.portrait_small {
+  margin-left:30px;
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  float: right;
+  display: none;
+  text-align: center;
+}
+
+/* style the portrait image */ 
+#picture1 {
+  /*float:right;*/
+  width:160px;
+  padding: 0px;
+  border:solid 3px;
+  border-color: var(--colstr2);
+  margin: 0px;
+}
+#picture2 {
+  /*float:right;*/
+  width:130px;
+  padding: 0px;
+  margin: 0px;
+  margin: auto;
+}
+
+/* center class to center stuff*/
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+
+/* style the menu's icon for the top navigation trigger */
+.menu {
+  float: left;
+  width: 50px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+/* style the icon's bars */
+.menu div {
+  width: 60%;
+  height: 8%;
+  margin: 5%;
+  background-color: var(--colstr3);
+  border-radius: 15px;
+}
+.menu:hover {
+  background-color: var(--colstr2);
+}
+
+/* style the links */
+.link1 {
+  text-decoration: none;
+  color:var(--collink1);
+}
+.link2 {
+  text-decoration: none;
+  color:var(--collink2);
+}
+/* style titles */
+.title {
+  color: var(--coltxt2);
+}
+
+
+/* Responsive layout */
+
+/* below 850 pixels */
+@media screen and (max-width: 950px) {
+  /*body {
+    margin-bottom: 10px;
+    margin-right: 2%;
+    margin-left: 2%;
+  }*/
+  .portrait {display:none}
+  .portrait_small {display:initial}
+  .contacts {display:initial}
+  .column1 {display: none;}
+  #section_home {
+    flex-direction: column;
+  }
+  #page_home {margin-left: 50px;}
+  .page {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .topnav {margin-top: 50px;}
+  #footer_home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+  #page_body_home {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+}
+
+/* below 600 px */
+/* @media screen and (max-width: 600px) {
+  body {
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    border: none;
+  }
+  .topbar {display:block}
+  .topnav {display:block}
+  .sidenav {display:none}
+} */
