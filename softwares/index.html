@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+<link rel="stylesheet" href="../styles.css">
+<title> Gabriele Todeschi / Softwares</title>
+<meta charset="UTF-8">
+<meta name="author" content="Gabriele Todeschi">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+
+<body>
+
+
+<img src="../images/header_image.jpg" class="header_img"> 
+
+
+<div class="section">
+
+  <!-- <div class="topbar">
+    <a href="javascript:void(0);" onclick="myFunction()">
+      <div class="menu">
+        <div></div>
+        <div></div>
+        <div></div>
+     </div>
+    </a>
+  </div> -->
+
+  <div class="topnav" id="mytopnav">
+    <a id="topnav_first" href="../index.html">Home</a>
+    <a id="topnav_second" href="../publications/index.html">Publications</a>
+    <a id="topnav_third" href="../teaching/index.html">Teaching</a>
+    <a id="topnav_third" href="index.html" style="border-bottom: solid 4px var(--colstr1)">Softwares</a>
+  </div>
+  
+
+   
+  <div class="page">
+
+    <div class="page_body">
+
+    <p style="margin-bottom:30px">Here you can find a list of available softwares that I have developed (together with my collaborators) or that I am contributing to: </p>
+
+    <ol>
+        <li>
+          Contribution to the Fortran software
+          <a class="link1" href="https://seiscope2.osug.fr/TOY2DAC-273">TOY2DAC</a> developed by the
+          <a class="link1" href="https://seiscope2.osug.fr/">SEISCOPE</a> team for seismic imaging via 
+          Full Waveform Inversion in the acoustic regime.
+          Specifically, implementation of new misfit functions based on optimal transport.
+        </li>
+        <br>
+        <li>
+          <a class="link1" href="https://github.com/gptod/OT-FV">OT-FV</a> (Matlab): computation of dynamical quadratic
+          optimal transport with finite volumes, owing to an interior point method for the solution of
+          the discrete optimization problem and efficient iterative linear solvers for the saddle point
+          problems that arise from it.
+        </li>
+        <br>
+        <li>
+          <a class="link1" href="https://github.com/andnatale/dynamic-ot">dynamic-ot</a> (Python): solution of
+          dynamical quadratic optimal transport with mixed finite element discretizations and the
+          implementation of proximal-splitting type optimization solvers.
+        </li>
+        <br>
+        <li>
+           <a class="link1" href="https://github.com/gptod/LJKO">LJKO</a>, <a class="link1" href="https://github.com/gptod/LJKO\_IPM">LJKO_IPM</a>
+           (Matlab): reliable and efficient computation of Wasserstein gradient flows via variational
+           finite volume schemes.
+         </li> 
+    </ol>
+    
+    </div>
+  
+  </div>
+ 
+
+</div>
+
+<div class="footer">
+
+  <div style="text-align:center; margin:0px;font-size:15px;">
+    <p style="color:var(--coltxt3);font-size:14px;text-align: center;padding-bottom:15px;margin:0px;">
+      Gabriele Todeschi, ISTerre, Université Grenoble Alpes
+    </p>
+    <p style="padding-bottom:10px">
+      <a class="link2" href="mailto:gabriele.todeschi@univ-grenoble-alpes.fr">
+        gabriele.todeschi@univ-grenoble-alpes.fr
+      </a>
+    </p>
+    
+    <div class="center" style="display:flex;flex-direction:row;justify-content:center;padding-top:0px;width:350px;font-size: 15px;">
+      <div style="display:flex;flex-direction:row;justify-content:center;align-items:center;padding:0px;margin:auto;">
+        <div style="padding-right:10px;">
+          <img src="../images/github_FFFFCC.png" alt="github" style="width:30px;height:30px;">
+        </div>
+        <div style="padding:0px">
+          <a class="link2" href="https://github.com/gptod">Github</a>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:row;justify-content:center;align-items:center;padding:0px;margin:auto;">
+        <div style="padding-right:7px;">
+          <img src=".-/images/scholar_FFFFCC.png" alt="github" style="width:30px;height:30px;">
+        </div>
+        <div style="padding:0px">
+          <a class="link2" href="https://scholar.google.com/citations?user=c2rpmLkAAAAJ&hl=it&oi=ao">Scholar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  function myFunction() {
+    if (document.getElementById("topnav_first").style.display == "none") {
+      document.getElementById("topnav_first").style.display = "block";
+      document.getElementById("topnav_second").style.display = "block";
+      document.getElementById("topnav_third").style.display = "block";
+      document.getElementById("topnav_fourth").style.display = "block";
+      document.getElementById("mytopnav").style.borderWidth = "2px";
+    } else {
+      document.getElementById("topnav_first").style.display = "none";
+      document.getElementById("topnav_second").style.display = "none";
+      document.getElementById("topnav_third").style.display = "none";
+      document.getElementById("topnav_fourth").style.display = "none";
+      document.getElementById("mytopnav").style.borderWidth = "0px";
+    }
+  }
+</script>
+
+</body>
+</html>
