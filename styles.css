@@ -1,13 +1,15 @@
 /* define colors */
 /* legend: */
-/* --colpag1: page color 1 (base color)*/
-/* --colpag2: page color 2 (hoover sidenav)*/
-/* --colstr1: structure color 1 (sidenav & footer bg)*/
-/* --colstr2: structure color 2 (headings' border)*/
-/* --colstr3: structure color 3 (edges)*/
-/* --coltxt1: text color 1 (text)*/
-/* --coltxt2: text color 2 (headings)*/
-/* --coltxt3: text color 3 (nav menu)*/
+/* --colback: background color */
+/* --colpag1: page color 1 */
+/* --colstr1: structure color 1 */
+/* --colstr2: structure color 2 */
+/* --colstr3: structure color 3 */
+/* --coltxt1: text color 1 */
+/* --coltxt2: text color 2 */
+/* --coltxt3: text color 3 */
+/* --collink1: hyperlink color 1 */
+/* --collink2: hyperlink color 2 */
 /* first option */
 :root {
   --colback: rgb(255, 255, 204);
@@ -297,14 +299,14 @@ body {
 }
 
 /* below 600 px */
-/* @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
   body {
     margin-bottom: 0px;
     margin-right: 0px;
     margin-left: 0px;
     border: none;
   }
-  .topbar {display:block}
-  .topnav {display:block}
-  .sidenav {display:none}
-} */
+  /*.topbar {display:block}
+  .topnav {display:block}*/
+  .portrait_small {display:none}
+}
