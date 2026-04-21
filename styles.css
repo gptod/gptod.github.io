@@ -13,17 +13,17 @@
 /* first option */
 :root {
   /*--colback: rgb(255, 255, 204);*/
-  --colback: rgb(255, 255, 230);
+  --colback: rgb(255, 255, 245);
   /*--colpag1: rgb(255, 255, 204);*/
-  --colpag1: rgb(255, 255, 230);
+  --colpag1: rgb(255, 255, 245);
   --colstr1: rgb(71,88,65);
   /*--colstr2: rgb(255, 255, 204);*/
-  --colstr2: rgb(255, 255, 230);
+  --colstr2: rgb(255, 255, 245);
   --colstr3: rgb(240,135,0);
   --coltxt1: black;
   --coltxt2: rgb(71,88,65);
   /*--coltxt3: rgb(255, 255, 204);*/
-  --coltxt3: rgb(255, 255, 230);
+  --coltxt3: rgb(255, 255, 245);
   --collink1: rgb(20,70,160);
   --collink2: rgb(240,135,0);
 }
